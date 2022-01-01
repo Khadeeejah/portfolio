@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <div class="bg-text">
+            <h2>KHADIJAH</h2>
+        </div>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Portfolio</a></li>
+                    <li><a href="#"> My Blog</a></li>
+                    <li><a href="#"> Contact me</a></li>
+
+                </ul>
+            </div>
+        </header>
+
+
+        <div class="content">
+            <div class="text">
+                <div class="text-inner">
+                    <h5>Front-end Developer</h5>
+                    <h1>KHADIJAH</h1>
+                    <h6> Coding - Entrepreneur - Modelling</h6>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $(".text h1, .bg-text h2, .text h5, .text h6").lettering();
+
+            var tl = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 2000,
+            
+        });
+
+        tl
+        .add({
+            targets: 'h1 span',
+            opacity: [0,1],
+            translateX: [100, 0],
+            delay: anime.stagger(200)
+
+        })
+
+        .add({
+            targets: 'h2 span',
+            opacity: [0,1],
+            translateX: [200, 0],
+            delay: anime.stagger(200)
+
+        }, '-=3000')
+
+        .add({
+            targets: '.text h5',
+            opacity: [0,1],
+            translateX: [-50, 0],
+            
+
+        },'-=500' )
+
+        .add({
+            targets: '.text h6',
+            opacity: [0,1],
+            delay: anime.stagger(200)
+            
+
+        },'-=1000' )
+
+        .add({
+            targets: '.menu li',
+        translateY: [-100, 0],
+            delay: anime.stagger(200)
+            
+
+        },'-=1500' )
+
+
+
+        });
+
+        
+    </script>
+</body>
+
+</html>
