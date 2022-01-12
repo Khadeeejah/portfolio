@@ -111,3 +111,12 @@ h1 span, .bg-text h2 span{
     display: inline-block;
 
 }
+
+.about-section{
+    background-color: grey;
+    height: 100vh;
+    padding: 10px auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
