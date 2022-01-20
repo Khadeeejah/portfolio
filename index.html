@@ -24,10 +24,10 @@
 
 
     
-    <div class="wrapper">
+    <div class="container">
 
-
-        <div class="bg-text">
+<h1> amusat khadijah</h1>
+        <!-- <div class="bg-text">
             <h2>KHADIJAH</h2>
         </div>
         <header>
@@ -57,7 +57,7 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -68,18 +68,7 @@
 
 
 
-    <section class="about-us-section" id="about">
-        <div class="about-text-container">
-<h3>Welcome</h3>
-<p> I am a self-taught front end developer who transitioned from public health in 2019</p>
-<p> with over 1 year experience. i have developed myself with great skills <br>
-   and also built amazing projects </p>
-    <button>Hire Me</button>
-        </div>
-        <div class="about-img-container">
-<img src="https://res.cloudinary.com/ddunuksxx/image/upload/v1621503562/aa_vcp55x.jpg" alt="">
-        </div>
-    </section>
+   
 
    
 
@@ -140,6 +129,39 @@
 
 
         });
+
+
+
+        const timeline = gsap.timeline();
+        timeline.to(".animate",{
+            delay:3,
+            duration: .5,
+            opacity: 0
+
+        });
+
+        timeline.to(".animate",{
+            delay:1,
+            duration:1,
+            y:"100%",
+            ease: "power4.out"
+        });
+
+        timeline.to("animation",{
+            zIndex: -1
+
+        });
+
+        timeline.from(".container h1",{
+            delay: .5,
+            duration: .8,
+            skewY: 10,
+            y: 100,
+            x: -199,
+            opacity: 0
+        })
+
+        
     </script>
 </body>
 
